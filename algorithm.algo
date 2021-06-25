@@ -1,0 +1,21 @@
+ALGORITHM phrase
+VAR
+ p:CHAR
+ n:INTEGER :=0  /* nombre de caractères */
+ v:INTEGER :=0  /* compteur des voyelles */
+ m:INTEGER :=0  /* compteur de mots */  
+BEGIN
+  read(p);
+  WHILE (p<>"." ) DO
+  n=n+1
+    IF (p="i" or p="o"or p="a" or p="u" or p="y" or p="e") THEN
+      v=v+1
+       ELSE_IF (p=" ") THEN
+          m=m+1
+        
+       END_IF
+  
+  END_WHILE  
+    write("nombre de voyelles" ,v "nombre de caractères",n "nombres de mots",m+1)
+
+END
